@@ -18,11 +18,58 @@
 </head>
 
 <body>
-    <!-- As a heading -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Jin Kim Web Dev</a> -->
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+
+                    <!-- dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://iamjink.github.io/WordGuess/">Word Guess</a>
+                            <a class="dropdown-item" href="https://iamjink.github.io/unit-4-game/">Crystal Collector</a>
+                            <a class="dropdown-item" href="https://iamjink.github.io/StarWars-RPG-Game/">Star Wars Game</a>
+                            <a class="dropdown-item" href="https://iamjink.github.io/TriviaGameOptionOne/">Trivia Game</a>
+                            <a class="dropdown-item" href="https://iamjink.github.io/Pausing-Gifs/">Pausing Gifs</a>
+                            <a class="dropdown-item" href="https://iamjink.github.io/Train-Scheduler/">Train Scheduler</a>
+                            <a class="dropdown-item" href="https://github.com/iamjink/liri-bot.git">Liri Bot</a>
+                            <a class="dropdown-item" href="https://github.com/iamjink/constructor_word_guess.git">Constructor Word Guess</a>
+                            <a class="dropdown-item" href="https://github.com/iamjink/bamazon.git">Bamazon</a>
+
+
+                            <!-- <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#three">three</a> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigation -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#"><span class="navbar-brand mb-0 h1">Jin K.</span></a>
-
-
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a class="nav-link" href="#portfolio">PORTFOLIO</a>
@@ -34,191 +81,203 @@
                 <a class="nav-link" href="#contact">CONTACT</a>
             </li>
 
-            <!-- dropdown menu -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">PROJECTS</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#one">one</a>
-                    <a class="dropdown-item" href="#two">two</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#three">three</a>
-                </div>
-            </li>
+
         </ul>
     </nav>
 
-    <!-- portfolio content -->
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container">
+    <!-- Masthead -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Heading -->
+            <h1 class="masthead-heading text-uppercase mb-0">Jin K.</h1>
+            <br>
+            <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
 
-        <h4 id="portfolio">Portfolio</h4>
-
-        <div class="row justify-content-md-center">
-
-            <!-- Portfolio Item 1 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/WordGuess/">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_01.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/unit-4-game/">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_02.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/StarWars-RPG-Game/" title="Sky">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_03.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Portfolio Item 4 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/TriviaGameOptionOne/" title="Living Room">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_04.png" alt="">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- Portfolio Item 5 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/Pausing-Gifs/" title="Pilot">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_06.png" alt="">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- Portfolio Item 6 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://iamjink.github.io/Train-Scheduler/" title="Jupiter Ascending">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_06.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 7 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://github.com/iamjink/liri-bot.git" title="Jupiter Ascending">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_07.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Portfolio Item 8 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://github.com/iamjink/constructor_word_guess.git" title="Jupiter Ascending">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_08.png" alt="">
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Portfolio Item 9 -->
-            <div class="col-sm-4">
-                <div>
-                    <a href="https://github.com/iamjink/bamazon.git" title="Jupiter Ascending">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="images/image_09.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
         </div>
-    </div>
+    </header>
 
+    <!-- portfolio -->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <br>
+            <!-- Portfolio Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <br>
+
+            <!-- portfolio content -->
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container">
+                <div class="row justify-content-md-center">
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/WordGuess/">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_01.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/unit-4-game/">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_02.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/StarWars-RPG-Game/" title="Sky">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_03.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/TriviaGameOptionOne/" title="Living Room">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_04.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/Pausing-Gifs/" title="Pilot">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_05.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://iamjink.github.io/Train-Scheduler/" title="Jupiter Ascending">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_06.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 7 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://github.com/iamjink/liri-bot.git" title="Jupiter Ascending">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_07.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://github.com/iamjink/constructor_word_guess.git" title="Jupiter Ascending">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_08.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Portfolio Item 9 -->
+                    <div class="col-sm-4">
+                        <div>
+                            <a href="https://github.com/iamjink/bamazon.git" title="Jupiter Ascending">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div
+                                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="images/image_09.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="page-section bg-primary text-white mb-0" id="about">
         <div class="container">
+            <br>
+
             <!-- About Section Heading -->
             <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
             <br>
