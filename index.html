@@ -33,28 +33,30 @@
             <li class="nav-item">
                 <a class="nav-link" href="#contact">CONTACT</a>
             </li>
-            <!-- <li class="nav-item dropdown">
+
+            <!-- dropdown menu -->
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
+                    aria-expanded="false">PROJECTS</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#one">one</a>
                     <a class="dropdown-item" href="#two">two</a>
                     <div role="separator" class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#three">three</a>
                 </div>
-            </li> -->
+            </li>
         </ul>
     </nav>
 
     <!-- portfolio content -->
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container">
-        
+
         <h4 id="portfolio">Portfolio</h4>
 
         <div class="row justify-content-md-center">
 
             <!-- Portfolio Item 1 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/WordGuess/">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
@@ -71,7 +73,7 @@
             </div>
 
             <!-- Portfolio Item 2 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/unit-4-game/">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
@@ -88,7 +90,7 @@
             </div>
 
             <!-- Portfolio Item 3 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/StarWars-RPG-Game/" title="Sky">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
@@ -106,7 +108,7 @@
 
 
             <!-- Portfolio Item 4 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/TriviaGameOptionOne/" title="Living Room">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
@@ -124,7 +126,7 @@
             </div>
 
             <!-- Portfolio Item 5 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/Pausing-Gifs/" title="Pilot">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
@@ -142,7 +144,7 @@
             </div>
 
             <!-- Portfolio Item 6 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://iamjink.github.io/Train-Scheduler/" title="Jupiter Ascending">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
@@ -159,7 +161,7 @@
             </div>
 
             <!-- Portfolio Item 7 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://github.com/iamjink/liri-bot.git" title="Jupiter Ascending">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
@@ -176,7 +178,7 @@
             </div>
 
             <!-- Portfolio Item 8 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://github.com/iamjink/constructor_word_guess.git" title="Jupiter Ascending">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
@@ -194,7 +196,7 @@
             </div>
 
             <!-- Portfolio Item 9 -->
-            <div class="col-md-auto">
+            <div class="col-sm-4">
                 <div>
                     <a href="https://github.com/iamjink/bamazon.git" title="Jupiter Ascending">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
@@ -209,9 +211,8 @@
                     </a>
                 </div>
             </div>
-
+            
         </div>
-
     </div>
 
 
@@ -240,50 +241,61 @@
     </section>
 
     <!-- Contact Section Form -->
-    <div class="row" id="contact">
-        <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Name</label>
-                        <input class="form-control" id="name" type="text" placeholder="Name" required="required"
-                            data-validation-required-message="Please enter your name.">
-                        <p class="help-block text-danger"></p>
-                    </div>
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row" id="contact">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Contact Section Heading -->
+                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                                    data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Email Address</label>
+                                <input class="form-control" id="email" type="email" placeholder="Email Address"
+                                    required="required"
+                                    data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Phone Number</label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number"
+                                    required="required"
+                                    data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Email Address</label>
-                        <input class="form-control" id="email" type="email" placeholder="Email Address"
-                            required="required" data-validation-required-message="Please enter your email address.">
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Phone Number</label>
-                        <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
-                            data-validation-required-message="Please enter your phone number.">
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"
-                            data-validation-required-message="Please enter a message."></textarea>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <br>
-                <div id="success"></div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-                </div>
-            </form>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
